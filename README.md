@@ -1,7 +1,7 @@
 spacetimegeo
 ==============================
 
-Exploratory analysis of citizens mobility with a Gaussian mixture model.
+Exploratory analysis of citizens mobility with a Gaussian mixture model
 
 Introduction
 ------------
