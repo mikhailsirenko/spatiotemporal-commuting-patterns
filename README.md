@@ -1,12 +1,13 @@
 spacetimegeo
 ==============================
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mikhailsirenko/spacetimegeo/master)
 
 Exploratory analysis of citizens mobility with a Gaussian mixture model. This respository is a part of research conducted by Verma et al. (2020).
 
 Introduction
 ------------
 
-Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people living a neighborhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighborhoods and ridership represented by "tap ins" made with Oyster card. 
+Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people live in a neighborhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighborhoods and ridership represented by "tap ins" made with Oyster card. 
 
 Data
 ------------
@@ -32,6 +33,7 @@ Contributions & authors
 
 License
 ------------
+[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 References
 ------------
