@@ -14,14 +14,13 @@ We found that often there is a mismatch between the population and ridership. Th
 
 Data
 ------------
-In this study we used four data sets:
+In this study we used three data sets:
 
-1.
-2. 
-3. 
-4.
+1. London Underground Passenger Count dataset as a proxy for ridership, which is provided freely by TfL (https://api-portal.tfl.gov.uk/docs).
+2. Rolling Origin-Destination Surveys (https://api-portal.tfl.gov.uk/docs).
+3. Census Output Areas Population Estimates, 2017 (https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/censusoutputareaestimatesinthelondonregionofengland).
 
-All of them are open-access and can be find online here (see References).
+All of them are open-access and can be find online.
 
 Methods
 ------------
