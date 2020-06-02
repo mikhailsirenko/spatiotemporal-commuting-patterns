@@ -21,9 +21,11 @@ In this study we used four open access data sets:
 
 Methods
 ------------
-This study follows a standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap ins).
+This study follows a standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap ins). Simplifed workflow looks as follows:
 
-![](https://github.com/mikhailsirenko/spacetimegeo/blob/master/methodology.png)
+<p align="center">
+  <img src="methodology.png" width="400">
+</p>
 
 Main findings
 ------------
