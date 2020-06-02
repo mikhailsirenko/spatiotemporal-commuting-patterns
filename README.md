@@ -6,13 +6,7 @@ Exploratory analysis of citizens mobility with a Gaussian mixture model. This re
 Introduction
 ------------
 
-Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people, the more metro station should be built. With this project, we aimed to explore relationships between the population of London neighborhoods and ridership represented by "tap ins" and "tap outs" made with Oyster card. 
-
-To do this, we follow the standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a variety of data visualizations. Finally, we apply the Gaussian mixture model (GMM) to cluster the stations based on "tap in" data. 
-
-We found that often there is a mismatch between the population and ridership. There are specific neighborhoods where the population is low, but ridership is high. To improve the planning model, we analyzed the clusters and came up with a categorization of the adjacent territory. In this model, the ridership is treated as a proxy for place use. For example, if there is a high number of people tapping in the morning and much less in the evening, we consider the area as residential. With GMM, we identified six relevant clusters that somehow represent a function of space around metro stations. The transportation model that takes into account these clusters can be more precise.
-
-
+Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people living a neighborhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighborhoods and ridership represented by "tap ins" made with Oyster card. 
 
 Data
 ------------
@@ -25,6 +19,7 @@ In this study we used four open access data sets:
 
 Methods
 ------------
+This study follows a standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap ins).
 
 Main findings
 ------------
