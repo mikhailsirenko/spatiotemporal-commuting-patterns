@@ -23,6 +23,8 @@ Methods
 ------------
 This study follows a standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap ins).
 
+![](https://github.com/mikhailsirenko/spacetimegeo/blob/master/methodology.png)
+
 Main findings
 ------------
 
