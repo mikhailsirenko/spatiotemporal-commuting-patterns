@@ -1,7 +1,7 @@
 spacetimegeo
 ==============================
 
-Analysis of citizens mobility with a Gaussian Mixture Model
+Exploratory analysis of citizens mobility with a Gaussian mixture model.
 
 Introduction
 ------------
@@ -14,54 +14,21 @@ We found that often there is a mismatch between the population and ridership. Th
 
 Data
 ------------
-In this study we used three data sets:
+In this study we used four open access data sets:
 
-1. London Underground Passenger Count dataset as a proxy for ridership, which is provided freely by TfL (https://api-portal.tfl.gov.uk/docs).
-2. Rolling Origin-Destination Surveys (https://api-portal.tfl.gov.uk/docs).
-3. Census Output Areas Population Estimates, 2017 (https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/censusoutputareaestimatesinthelondonregionofengland).
-
-All of them are open-access and can be find online.
+1. Office for National Statistics (2019). Census Output Area population estimates – London, England (supporting information). Retrieved from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/censusoutputareaestimatesinthelondonregionofengland
+2. London Datastore (2019). Statistical GIS Boundary Files for London. Retrieved from https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
+3. Transport for London (2020). Transport for London API. Retrieved from https://api-portal.tfl.gov.uk/docs
+4. Wikimedia Commons (2020). London Underground geographic maps/CSV. Retrieved from https://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV
 
 Methods
 ------------
-* Describe preprocessing (creation of individual traces)
-* Clustering of stations
-* Clustering of individual traces
-* Note on complexity of the task
 
-Results
+Main findings
 ------------
 
-
-Project Organization
+Project organization
 ------------
-
-    ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    ├── figures            <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │                     predictions
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    └──
---------
 
 Contributions & authors
 ------------
