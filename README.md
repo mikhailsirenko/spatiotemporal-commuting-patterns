@@ -1,6 +1,7 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mikhailsirenko/spacetimegeo/master)
+
 spacetimegeo
 ==============================
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mikhailsirenko/spacetimegeo/master)
 
 Exploratory analysis of citizens mobility with a Gaussian mixture model. This respository is a part of research conducted by Verma et al. (2020).
 
