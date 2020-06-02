@@ -1,7 +1,7 @@
 spacetimegeo
 ==============================
 
-Exploratory analysis of citizens mobility with a Gaussian mixture model
+Exploratory analysis of citizens mobility with a Gaussian mixture model. This respository is a part of research conducted by Verma et al. (2020).
 
 Introduction
 ------------
@@ -11,6 +11,8 @@ Quite often, transportation planning operates with a simple model that takes int
 To do this, we follow the standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a variety of data visualizations. Finally, we apply the Gaussian mixture model (GMM) to cluster the stations based on "tap in" data. 
 
 We found that often there is a mismatch between the population and ridership. There are specific neighborhoods where the population is low, but ridership is high. To improve the planning model, we analyzed the clusters and came up with a categorization of the adjacent territory. In this model, the ridership is treated as a proxy for place use. For example, if there is a high number of people tapping in the morning and much less in the evening, we consider the area as residential. With GMM, we identified six relevant clusters that somehow represent a function of space around metro stations. The transportation model that takes into account these clusters can be more precise.
+
+
 
 Data
 ------------
@@ -38,3 +40,4 @@ License
 
 References
 ------------
+1. Verma, T., Sirenko, M., Kornecki, I., Cunningham S., Araujo, N. A. M. (2020) Extracting Spatiotemporal Demand for Public Transit from Mobility Data. Manuscript submitted for publication.
