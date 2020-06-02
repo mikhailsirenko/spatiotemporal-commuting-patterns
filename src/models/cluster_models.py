@@ -6,7 +6,27 @@ from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bo
 from tqdm import tqdm
 
 def gmm(features, max_components, print_covergence=False, random_state=12345, data_type='entry', save_models=True):
+    '''
+    Perform Gaussian mixture model (GMM).
     
+    Args:
+        features (DataFrame or GeoDataFrame) : Counts data     
+        max_components (int) : Max number of components for GMM
+        print_convergence (bool) : Print GMM convergence?
+        random_state (int) : Random state
+        data_type (str) : Type of input data: entry or exit
+        save_models (bool) : Save pretrained models?
+
+    Returns:
+        labels (dict) : Resulting labels
+        probs (dict) : Probabilities of cluster assignment
+        weights (dict) : Cluster weights
+        means (dict) : Means
+        covariances (dict) : Covariances
+        metrics (DataFrame) : Computed clustering metrics
+        
+    '''
+
     X = features.values
     
     labels = {}
