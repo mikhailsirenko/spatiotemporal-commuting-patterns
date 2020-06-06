@@ -50,11 +50,24 @@ This pattern becomes more apparent if we will plot the stations coloured by clus
 Project organization
 ------------
 This project uses a simplified version of [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) structure proposed by DrivenData.
+
 ```
-├── figures            <- Generated figures
+├── figures            <- Generated graphics and figures to be used in reporting
+│
 ├── models             <- Trained and serialized models
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering), and a short `-` delimited description
-├── src                <- Standalone scripts used for modelling and  visualization
+│
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering), 
+│                         and a short `-` delimited description
+│
+├── setup.py           <- Make this project pip installable with `pip install -e`
+│
+├── src                <- Source code for use in this project  
+│   ├── __init__.py    <- Makes src a Python module
+│   │
+│   ├── models         <- Scripts to train models and then use trained models to make
+│   │                     predictions
+│   │ 
+│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
 ```
 
 Reproducing results
