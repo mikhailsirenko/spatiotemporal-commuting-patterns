@@ -107,9 +107,14 @@ def plot_counts(gdf, labels, n_components, label_names=None, figsize=(18,8), plo
     '''
     
     result = pd.DataFrame(gdf.loc[:,'0200-0215':'0145-0200'])
+    result['label_name'] = gdf['label_name']
 
     # Assign the cluster labels
     result['labels'] = labels
+    
+    label_names = ["Inner residential", "Polycentre", "CBD", "Mixed commuting", "Outer residential", "Potential feeder"]
+    label_color_map = {"Outer residential": "#FF2C00", "CBD": "#00B945", "Polycentre": "#845B97", 
+                       "Inner residential": "#FF9500", "Potential feeder": "#0C5DA5", "Mixed commuting": "#474747"}
     
     # Plot the results
     ncols = 3
@@ -119,7 +124,9 @@ def plot_counts(gdf, labels, n_components, label_names=None, figsize=(18,8), plo
     for i in range(0, nrows):
         for j in range(0, ncols):
             # Select stations of a certain cluster
-            df = result[result["labels"] == k].drop("labels", axis=1).T
+            df = result[result["labels"] == k]
+            current_label_name = df[df['labels'] == k]['label_name'].iloc[0]
+            df = df.drop(["labels", 'label_name'], axis=1).T
             
             # Plot it
             # With median
@@ -128,8 +135,8 @@ def plot_counts(gdf, labels, n_components, label_names=None, figsize=(18,8), plo
                 median = df.T.median()
                 q1 = df.T.quantile(0.1)
                 q3 = df.T.quantile(0.9)
-                ax[i, j].plot(median.index, median, color='#0C5DA5', linewidth=1)
-                ax[i, j].fill_between(median.index, q1, q3, color='#0C5DA5', alpha=0.25)
+                ax[i, j].plot(median.index, median, color=label_color_map[current_label_name], linewidth=1)
+                ax[i, j].fill_between(median.index, q1, q3, color=label_color_map[current_label_name], alpha=0.25)
             
             # Without
             else:
