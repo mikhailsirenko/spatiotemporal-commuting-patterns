@@ -32,19 +32,19 @@ Main findings
 Clustering of individual passenger entrances resulted in six distinct *temporal profiles*. That is, each metro station is a unique combination of *work*, *early afternoon*, *afternoon*, *residential*, *evening* and *nighttime* traffic volumes.
 
 <p align="center">
-  <img src="figures/fig2.png" width="600">
+  <img src="figures/fig2.png">
 </p>
 
 Clustering of station traffic in combination with the analysis of their locations revealed a *spatial pattern*. In total, we found 6 remarkable station traffic clusters. Depending on where the station is located, it has either balanced entrances at the beginning and the of the day (*polycentre*) or predominant entrances only at the beginning of the day (*outer residential*) or other combinations (*inner residential*, *CBD*, *mixed commuting*).
 
 <p align="center">
-  <img src="figures/fig3a.png" width="600">
+  <img src="figures/fig3a.png">
 </p>
 
 This pattern becomes more apparent if we will plot the stations coloured by cluster on the map. The city centre is full of stations clustered as *CBD*. *Inner residential* stations forming an "inner ring" around the *CBD*, while *outer residential* stations create an "outer ring." The choropleth represents the adult population of the ward.
 
 <p align="center">
-  <img src="figures/fig3c.png" width="400">
+  <img src="figures/fig3c.png">
 </p>
 
 Project organization
