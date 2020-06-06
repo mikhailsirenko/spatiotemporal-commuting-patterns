@@ -41,7 +41,7 @@ Clustering of station traffic in combination with the analysis of their location
   <img src="figures/fig3a.png">
 </p>
 
-This pattern becomes more apparent if we will plot the stations coloured by cluster on the map. The city centre is full of stations clustered as *CBD*. *Inner residential* stations forming an "inner ring" around the *CBD*, while *outer residential* stations create an "outer ring." The choropleth represents the adult population of the ward.
+This pattern becomes more apparent if we will plot the stations coloured by cluster on the map. The city centre is full of stations clustered as *CBD*. *Inner residential* stations forming an "inner ring" around the *CBD*, while *outer residential* stations create an "outer ring." The choropleth represents adult population by ward.
 
 <p align="center">
   <img src="figures/fig3c.png">
