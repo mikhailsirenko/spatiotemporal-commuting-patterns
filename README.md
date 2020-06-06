@@ -24,17 +24,32 @@ Methods
 This study follows a standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap ins). Simplifed workflow looks as follows:
 
 <p align="center">
-  <img src="methodology.png" width="600">
+  <img src="workflow.png" width="600">
 </p>
 
 Main findings
 ------------
+<p align="center">
+  <img src="figures/fig2.png" width="600">
+</p>
+
+<p align="center">
+  <img src="figures/fig3a.png" width="600">
+</p>
+
+<p align="center">
+  <img src="figures/fig3c.png" width="400">
+</p>
 
 Project organization
 ------------
 
-Contributions & authors
+Reproducing results
 ------------
+
+Authors
+------------
+*Tivik Verma*, *Mikhail Sirenko*, *Itto Kornecki*, *Scott Cunningham* and *Nuno Araujo*.
 
 License
 ------------
