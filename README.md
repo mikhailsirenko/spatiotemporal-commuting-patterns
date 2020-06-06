@@ -12,7 +12,7 @@ Quite often, transportation planning operates with a simple model that takes int
 
 Data
 ------------
-In this research We used four open-access data sets:
+In this research we used four open-access data sets:
 
 1. Office for National Statistics (2019). Census Output Area population estimates – London, England (supporting information). Retrieved from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/censusoutputareaestimatesinthelondonregionofengland
 2. London Datastore (2019). Statistical GIS Boundary Files for London. Retrieved from https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
