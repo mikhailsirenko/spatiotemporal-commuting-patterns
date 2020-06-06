@@ -8,10 +8,12 @@ Exploratory analysis of citizens mobility with a Gaussian mixture model. This re
 Introduction
 ------------
 
-Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people live in a neighborhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighborhoods and ridership represented by "tap ins" made with Oyster card. 
+Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people live in a neighborhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighborhoods and ridership represented by "tap ins" made with [Oyster card](https://en.wikipedia.org/wiki/Oyster_card). 
 
 Data
 ------------
+The project was designed with principles of reproducibility in mind. That is, if you want to replicate the results, you can easily download the data used in this study with `1-data-gathering.ipynb` and preprocess it with `2.1-data-preprocessing.ipynb`. 
+
 In this study we used four open access data sets:
 
 1. Office for National Statistics (2019). Census Output Area population estimates – London, England (supporting information). Retrieved from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/censusoutputareaestimatesinthelondonregionofengland
