@@ -29,7 +29,7 @@ This study follows a standard logic of the data science project. First, we gathe
 
 Main findings
 ------------
-Clustering of individual passenger entrances resulted in six distinct *temporal profiles*. That is, each metro station is a unique combination of *work*, *early afternoon*, *afternoon*, *residential*, *evening* and *nighttime* traffic volumes.
+Clustering of individual passenger entrances resulted in 6 distinct *temporal profiles*. That is, each metro station is a unique combination of *work*, *early afternoon*, *afternoon*, *residential*, *evening* and *nighttime* traffic volumes.
 
 <p align="center">
   <img src="figures/fig2.png">
