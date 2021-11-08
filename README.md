@@ -3,7 +3,7 @@
 spacetimegeo
 ==============================
 
-An exploratory analysis of citizens mobility with a Gaussian mixture model. This repository is a part of research conducted by Verma et al. (2020).
+An exploratory analysis of citizens mobility with a Gaussian mixture model. This repository is a part of research conducted by Verma et al. (2021).
 
 Introduction
 ------------
@@ -86,4 +86,4 @@ License
 
 References
 ------------
-1. Verma, T., Sirenko, M., Kornecki, I., Cunningham S., Araujo, N. A. M. (2020) Extracting Spatiotemporal Demand for Public Transit from Mobility Data. Manuscript submitted for review.
+1. Verma, T., Sirenko, M., Kornecki, I., Cunningham, S., & Araújo, N. A. (2021). Extracting spatiotemporal commuting patterns from public transit data. _Journal of Urban Mobility, 1_, 100004.
