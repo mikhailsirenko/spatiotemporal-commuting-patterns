@@ -78,7 +78,7 @@ To use visualization and model scripts from the src folder you need to do the fo
 
 Authors
 ------------
-*Tivik Verma*, *Mikhail Sirenko*, *Itto Kornecki*, *Scott Cunningham* and *Nuno Araujo*.
+*Trivik Verma*, *Mikhail Sirenko*, *Itto Kornecki*, *Scott Cunningham* and *Nuno Araujo*.
 
 License
 ------------
