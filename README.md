@@ -5,7 +5,7 @@ spatiotemporal-commuting-patterns
 
 An exploratory data analysis of urban mobility with Gaussian mixture models. This repository is a part of the research conducted by Verma et al. (2021).
 
-Introduction
+Background
 ------------
 
 Quite often, transportation planning operates with a simple model that considers only population counts. The more people live in a neighbourhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighbourhoods and ridership represented by "tap-ins" made with [Oyster card](https://en.wikipedia.org/wiki/Oyster_card). 
