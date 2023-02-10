@@ -19,7 +19,7 @@ In this research, we used four open-access data sets:
 3. Transport for London (2020). Transport for London API. Retrieved from https://api-portal.tfl.gov.uk/docs
 4. Wikimedia Commons (2020). London Underground geographic maps/CSV. Retrieved from https://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV
 
-Methods
+Methodology
 ------------
 This study follows the standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap-ins). The simplified workflow looks as follows:
 
