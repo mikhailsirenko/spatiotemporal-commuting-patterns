@@ -1,18 +1,18 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mikhailsirenko/spacetimegeo/master)
 
-spacetimegeo
+spatiotemporal-commuting-patterns 
 ==============================
 
-An exploratory analysis of citizens mobility with a Gaussian mixture model. This repository is a part of research conducted by Verma et al. (2021).
+An exploratory data analysis of urban mobility with Gaussian mixture models. This repository is a part of the research conducted by Verma et al. (2021).
 
 Introduction
 ------------
 
-Quite often, transportation planning operates with a simple model that takes into account only population counts. That is, the more people live in a neighbourhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighbourhoods and ridership represented by "tap ins" made with [Oyster card](https://en.wikipedia.org/wiki/Oyster_card). 
+Quite often, transportation planning operates with a simple model that considers only population counts. The more people live in a neighbourhood, the more metro stations will be built to support expected demand. With this project, we aimed to explore relationships between the population of London neighbourhoods and ridership represented by "tap-ins" made with [Oyster card](https://en.wikipedia.org/wiki/Oyster_card). 
 
 Data
 ------------
-In this research we used four open-access data sets:
+In this research, we used four open-access data sets:
 
 1. Office for National Statistics (2019). Census Output Area population estimates – London, England (supporting information). Retrieved from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/censusoutputareaestimatesinthelondonregionofengland
 2. London Datastore (2019). Statistical GIS Boundary Files for London. Retrieved from https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
@@ -21,7 +21,7 @@ In this research we used four open-access data sets:
 
 Methods
 ------------
-This study follows a standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap ins). The simplified workflow looks as follows:
+This study follows the standard logic of the data science project. First, we gather the data and preprocess it. Second, we explore the data with a couple of visualizations. Finally, we apply a Gaussian mixture model (GMM) to cluster the stations (aggregated tap in) as well as individual passengers (generated tap-ins). The simplified workflow looks as follows:
 
 <p align="center">
   <img src="workflow.png" width="600">
@@ -29,7 +29,7 @@ This study follows a standard logic of the data science project. First, we gathe
 
 Main findings
 ------------
-Clustering of individual passenger entrances resulted in 6 distinct *temporal profiles*. That is, each metro station is a unique combination of *work*, *early afternoon*, *afternoon*, *residential*, *evening* and *nighttime* traffic volumes.
+Clustering of individual passenger entrances resulted in 6 distinct *temporal profiles*. Each metro station is a unique combination of *work*, *early afternoon*, *afternoon*, *residential*, *evening* and *nighttime* traffic volumes.
 
 <p align="center">
   <img src="figures/fig2.png">
@@ -41,7 +41,7 @@ Clustering of station traffic in combination with the analysis of their location
   <img src="figures/fig3a.png">
 </p>
 
-This pattern becomes more apparent if we will plot the stations coloured by cluster on the map. The city centre is full of stations clustered as *CBD*. *Inner residential* stations forming an "inner ring" around the *CBD*, while *outer residential* stations create an "outer ring." The choropleth represents adult population by ward.
+This pattern becomes more apparent if we plot the stations coloured by cluster on the map. The city centre is full of stations clustered as *CBD*. *Inner residential* stations forming an "inner ring" around the *CBD*, while *outer residential* stations create an "outer ring." The choropleth represents the adult population by ward.
 
 <p align="center">
   <img src="figures/fig3c.png">
@@ -56,7 +56,7 @@ This project uses a simplified version of [Cookiecutter Data Science](https://dr
 │
 ├── models             <- Trained and serialized models
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering), 
+├── notebooks          <- Jupyter notebooks. The naming convention is a number (for ordering), 
 │                         and a short `-` delimited description
 │
 ├── setup.py           <- Make this project pip installable with `pip install -e`
@@ -67,14 +67,14 @@ This project uses a simplified version of [Cookiecutter Data Science](https://dr
 │   ├── models         <- Scripts to train models and then use trained models to make
 │   │                     predictions
 │   │ 
-│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+│   └── visualization  <- Scripts to create exploratory and results-oriented visualizations
 ```
 
 Reproducing results
 ------------
-The project was designed with principles of reproducibility in mind. The notebooks folder has a complete collection of Jupyter Notebooks needed to reproduce the whole study, from the beginning to the end. That is, if you want to download the data, you can easily do it by rerunning `1-data-gathering.ipynb` notebook. Modelling requires `2.1-data-preprocessing.ipynb` to be rerun. The results of the analysis can be reproduced by rerunning `2.2-data-generation.ipynb`, `4.1-cluster-stations.ipynb`, and `4.3-cluster-ind-traces.ipynb` in a sequence. The rest of the notebooks dedicated to the analysis of performance and visualizing the results.
+The project was designed with principles of reproducibility in mind. The notebooks folder has a complete collection of Jupyter Notebooks needed to reproduce the whole study, from the beginning to the end. That is, if you want to download the data, you can easily do it by rerunning `1-data-gathering.ipynb` notebook. Modelling requires `2.1-data-preprocessing.ipynb` to be rerun. The results of the analysis can be reproduced by rerunning `2.2-data-generation.ipynb`, `4.1-cluster-stations.ipynb`, and `4.3-cluster-ind-traces.ipynb` in a sequence. The rest of the notebooks are dedicated to the analysis of performance and visualizing the results.
 
-To use visualization and model scripts from the src folder you need to do the following: 1). clone the repo and unpack it into a separate folder (project directory) 2). run `pip install editable . ` command in Anaconda prompt in this project directory (the dot at the end is important). This command will turn the project folder in a Python package and make scripts from src folder easily accessible. Read more about this "trick" [here](https://blog.godatadriven.com/write-less-terrible-notebook-code).
+To use visualization and model scripts from the src folder, you need to do the following: 1). clone the repo and unpack it into a separate folder (project directory) 2). run `pip install editable . ` command in the Anaconda prompt in this project directory (the dot at the end is important). This command will turn the project folder into a Python package and make scripts from src folder easily accessible. Read more about this "trick" [here](https://blog.godatadriven.com/write-less-terrible-notebook-code).
 
 Authors
 ------------
